@@ -164,6 +164,7 @@ console.log(result)
 // Rotate and Arry by K times.
 
 //rotate an array by k times
+/*
 const arr = [1,2,3,4,5]
 const k =3;
 function rotate(arr,k){
@@ -176,4 +177,24 @@ function rotate(arr,k){
      return arr
 }
 console.log(rotate(arr,k));
+*/
 
+// Given array expected output ["apple","mango","orange"]
+
+let arr=["apple","mango","orange"]
+const result=arr.filter((key)=>key ==="mango" || key !=="mango")
+console.log(result)
+const result1=arr.map((key)=>{
+    if(key==="mango")
+    {
+       return key+"e"
+    }
+    else
+    {
+        return key
+    }
+})
+console.log(result1)
+
+const result2=result1.map((key)=>key+"s")
+console.log(result2)
